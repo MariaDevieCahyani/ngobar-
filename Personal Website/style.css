@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+    
+}
+
+
+/* .navigasi {
+    background-color: #5D001E;
+    width: 100%;
+    height: 70px;
+    color: #E3E2DF;
+    position: fixed;
+
+}
+
+
+.logo {
+float: left;
+padding-top: 20px;
+padding-bottom: 10px;
+padding-left: 80px;
+}
+
+
+.menu {
+    margin-left: 500px;
+    padding-top: 27px;
+    margin-right: 0px;
+   
+}
+
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 170px;
+}
+
+
+.menu ul li a {
+    text-decoration: none;
+    color: #E3E2DF;
+}
+
+.menu ul li a:hover {
+    color: #9A1750;
+    font-style: italic;
+} */
+
+
+/* navbar */
+
+.navigasi{
+    padding: 10px 5%;
+    top: 0;
+    right: 0;
+    left: 0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #5D001E;
+    z-index: 999;
+
+}
+.logo {
+    color: #E3E2DF;
+    }
+
+.menu ul{
+    padding: 5px;
+    list-style: none;
+ 
+   width: 800px;
+   display: flex;
+   justify-content: space-around;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: #E3E2DF;
+}
+.menu ul li a:hover {
+    color: #9A1750;
+    font-style: italic;
+}
+
+.icon{
+    display: none;
+}
+.banner {
+    background-color: E3E2DF;
+    height: 600px;
+    text-align: center;
+    color: #5D001E;
+}
+
+.banner img {
+    border-radius: 100px;
+    height: 150px;
+    border: 6px solid #6a002e;
+    margin-top: 100px;
+
+
+}
+
+.banner h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.banner button {
+    margin-top: 60px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 50px;
+    border: none;
+}
+
+.banner button:hover {
+    background-color: #5D001E ;
+    border: 1px solid #E3AFBC;
+    color: white;
+}
+
+h1 span:before {
+    content: '';
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%);
+    color: #5D001E;
+    font-size: 70px;
+}
+
+
+@keyframes gerak {
+    0% {
+        content: 'Selamat Datang';
+    }
+    50% {
+        content: 'Saya Maria';
+    }
+    100% {
+        content: 'Terimakasi sudah singgah :)';
+    }
+}
+
+
+.box-pendidikan {
+    text-align: center;
+    color: #5D001E;
+    margin-top: 30px;
+    align-content: center;
+}
+
+
+.box-kiri, .box-tengah, .box-kanan {
+    width: 300px;
+    height: 320px;
+    background-color: #E3E2DF;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 70px 20px 20px 100px;
+    border-radius: 10px;
+    float: left;
+}
+
+
+.box-kiri:hover, .box-tengah:hover, .box-kanan:hover {
+    background-color: #5D001E;
+    color: #E3E2DF;
+}
+
+.box-pendidikan h3, p{
+    margin: 10px;
+    margin-bottom: 13px;
+    padding: 0px 20px;
+
+}
+
+
+
+.box-hoby {
+    text-align: center;
+    color: #5D001E;
+    margin: 0px auto;
+    margin-top: 560px;
+}
+
+
+.box-hkiri, .box-htengah, .box-hkanan {
+    width: 300px;
+    height: 320px;
+    background-color: #E3E2DF;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 70px 20px 20px 100px;
+    border-radius: 10px;
+    float: left;
+}
+
+
+.box-hkiri:hover, .box-htengah:hover, .box-hkanan:hover {
+    background-color: #5D001E;
+    color: #E3E2DF;
+    
+}
+
+
+.box-kontak img {
+    width: 300px;
+    margin-top: 125px;
+    margin-bottom: 50px;
+}
+
+
+.box-kontak {
+    text-align: center;
+    margin-top: 500px;
+    color: #5D001E;
+}
+
+
+.footer {
+    background-color: #5D001E;
+    width: 100px auto;
+    height: 40px;
+    color: #E3E2DF;
+    padding: 3px;
+    margin: 50px auto 0px;
+}
+
+ 
+/* responsive */
+
+@media (max-width : 936px) {
+    .menu .menu-lis{
+        position: fixed;
+        top: 53px;
+        right: -100%;
+        display: block;
+      width: 400px;
+      background-color: #E3AFBC;
+      height: 100vh;
+      text-align: center;
+      transition: 1s all;
+    }
+    .menu ul li a{
+        margin: 10px 0;
+    }
+    .icon{
+        border: none;
+       display: block;
+    }
+
+    .menu ul.active{
+        right: 0;
+    }
+    /* .menu ul{
+        display: none;
+    } */
+} 
